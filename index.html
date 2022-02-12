@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Project: Recipes</title>
+    <style>
+      h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 80px;
+        padding: 10px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+      }
+
+      .item {
+        padding: 5px;
+        margin: 30px;
+        max-width: 100%;
+      }
+
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 2px;
+        transition: width 1s, height 1s;
+      }
+
+      html,
+      body,
+      div,
+      img {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      body {
+        line-height: 1;
+      }
+
+      .image-container {
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        padding: 30px;
+        margin: 35px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 76.9%;
+        width: 77.2%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #dde3e6;
+      }
+
+      .image-container:hover .overlay {
+        opacity: 0.8;
+      }
+
+      .image-container:hover .text {
+        opacity: 1;
+      }
+
+      .text {
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ODIN'S RECIPES</h1>
+    <div class="container">
+      <div class="image-container">
+        <a href="pork.html">
+          <img class="item" src="/resources/chicken.jpg" alt="Example image" />
+          <div class="overlay">
+            <div class="text">ROASTED CHICKEN</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="image-container">
+          <a href="pork.html">
+            <img class="item" src="/resources/pork.jpeg" alt="Example image" />
+            <div class="overlay">
+              <div class="text">ROASTED PORK</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+              <a href="pork.html">
+                <img class="item" src="/resources/toast.jpg" alt="Example image" />
+                <div class="overlay">
+                  <div class="text">FRENCH TOAST</div>
+                </div>
+              </a>
+            </div>
+    </div>
+  </body>
+</html>
