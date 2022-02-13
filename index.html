@@ -15,7 +15,6 @@
       .container {
         display: flex;
         flex-wrap: wrap;
-
         justify-content: center;
       }
 
@@ -24,6 +23,7 @@
         padding: 5px;
         margin: 30px;
         max-width: 100%;
+        display: block;
       }
 
       img {
@@ -32,6 +32,7 @@
         object-fit: cover;
         border-radius: 2px;
         transition: width 1s, height 1s;
+        max-width: 100%;
       }
 
       html,
@@ -45,12 +46,11 @@
         font: inherit;
         vertical-align: baseline;
       }
-      body {
-        line-height: 1;
-      }
+
 
       .image-container {
         position: relative;
+        
       }
 
       .overlay {
@@ -62,7 +62,6 @@
         left: 0;
         right: 0;
         height: 76.9%;
-        width: 77.2%;
         opacity: 0;
         transition: 0.5s ease;
         background-color: #dde3e6;
@@ -96,7 +95,7 @@
     <h1>ODIN'S RECIPES</h1>
     <div class="container">
       <div class="image-container">
-        <a href="pork.html">
+        <a href="chicken.html">
           <img class="item" src="/resources/chicken.jpg" alt="Example image" />
           <div class="overlay">
             <div class="text">ROASTED CHICKEN</div>
@@ -121,16 +120,5 @@
           </div>
         </a>
     </div>
-
-    <div style="--aspect-ratio: 16/9;">
-      <iframe 
-        src="https://css-tricks.com"
-        width="1600"
-        height="900"
-        frameborder="0"
-      >
-      </iframe>
-    </div>
-
   </body>
 </html>
