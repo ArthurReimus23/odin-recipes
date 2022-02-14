@@ -1,0 +1,164 @@
+#header-1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  max-width: 100%;
+  display: relative;
+  padding-top: 10px;
+}
+
+#header-2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.index-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  padding: 5px;
+  margin: 30px;
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: width 1s, height 1s;
+  padding-left: 10px;
+  max-width: 100%;
+}
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  padding: 30px;
+  margin: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 76.9%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #dde3e6;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.image-container:hover .text {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sub-headers {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 0px;
+}
+
+#nutrition {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+#ingredients {
+  letter-spacing: 1px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+}
+
+#procedure {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.recipe-container {
+  padding: 10px;
+}
+
+.list {
+  line-height: 40px;
+  width: 1700px;
+  text-align: justify;
+  max-width: 100%;
+}
+
+#main-navbar {
+  list-style-type: none;
+  max-width: 100%;
+  float: left;
+  display: relative;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.navlink:link,
+.navlink:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  max-width: 100%;
+  height: auto;
+}
+
+.navlink:hover,
+.navlink:active {
+  background-color: black;
+  color: white;
+}
+
+li .navlink {
+  display: block;
+  padding: 8px;
+}

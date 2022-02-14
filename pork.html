@@ -5,146 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roasted Pork</title>
-
-    <style>
-      #header-1 {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 80px;
-        text-align: center;
-        max-width: 100%;
-        display: relative;
-        padding-top: 10px;
-      }
-
-      #header-2 {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 50px;
-        padding: 5px 5px 5px 10px;
-        text-align: left;
-        max-width: 100%;
-      }
-
-      #main-navbar {
-        list-style-type: none;
-
-        max-width: 100%;
-        float: left;
-        display: relative;
-        padding-left: 10px;
-        padding-top: 15px;
-
-      }
-
-      a:link, a:visited {
-        background-color: white;
-        color: black;
-        border: 2px solid rgb(0, 0, 0);
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-weight: bold;  
-        max-width: 100%;
-        height:auto;
-      }
-
-      a:hover, a:active {
-        background-color: black;
-        color: white;
-      }
-
-
-      .image {
-        width: 500px;
-        height: 500px;
-        max-width: 100%;
-        object-fit: cover;
-        border-radius: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 20px;
-        border: 10px;
-      }
-
-      .sub-headers {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 40px;
-        padding-left: 10px;
-        text-align:left;
-        line-height: 0px;
-      }
-
-      #nutrition {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        letter-spacing: 1px;
-        font-size: 20px;
-        padding-left: 10px;
-        line-height: 30px;
-      }
-
-      #ingredients {
-        letter-spacing: 1px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 20px;
-      }
-
-      #procedure {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        letter-spacing: 1px;
-        font-size: 20px;
-      }
-
-      .container {
-        padding: 10px;
-      }
-
-      .list {
-        line-height: 40px;
-        width: 1700px;
-        text-align: justify;
-        max-width: 100%;
-      }
-
-      li a {
-        display: block;
-        padding: 8px;
-        text-underline-offset: ;
-      }
-
-      
-    
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     
     <div id="header">
       <div class="div-navbar">
         <ul id="main-navbar">
-          <li id="navbar"><a href="index.html">HOME</a></li>
+          <li id="navbar"><a class="navlink" href="index.html">HOME</a></li>
         </ul>
-      </div>
-      
-
+      </div>  
       <h1 id="header-1">ODIN'S RECIPES</h1>
     </div>
-    
-
-    <h2 id="header-2">Odin's Roasted Pork</h1>
-
+    <h2 id="header-2">Odin's Roasted Pork</h2>
     <div class="image-container">
       <img class="image" src="/resources/pork.jpeg" alt="Roasted Pork" />
     </div>
-
     <div class=container>
-      <h2 class="sub-headers">Nutriton Facts</h2>
+      <h3 class="sub-headers">Nutriton Facts</h3>
       <p id="nutrition"> Per Serving: 423 calories; protein 30.9g; carbohydrates 1.2g; fat 32.1g; cholesterol 97mg; sodium 661.9mg </p>
     </div>
-
     <div class=container>
-      <h3 class="sub-headers">Ingredients</h2>
+      <h4 class="sub-headers">Ingredients</h4>
       <ul id="ingredients">
         <li class="list">2/3 cup packed light brown sugar</li>
         <li class="list">1/4 cup cinnamon applesauce</li> 
@@ -152,9 +34,8 @@
         <li class="list">2 pounds boneless pork loin roast</li>   
       </ul>
     </div>
-
     <div class=container>
-      <h4 class="sub-headers"> Procedure </h4>
+      <h5 class="sub-headers"> Procedure </h5>
       <ol id="procedure">
         <li class="list">Preheat oven to 325&#8457 (165&#8451).</li>
         <li class="list">In a small bowl, blend brown sugar, applesauce, and ginger.</li>
@@ -162,11 +43,5 @@
         <li class="list">Cook the roast 1 hour in the preheated oven, or until the internal temperature has reached 145&#8457 (63&#8451).</li>
       </ol>
     </div>
-
-
-
-    
-
-    
   </body>
 </html>
